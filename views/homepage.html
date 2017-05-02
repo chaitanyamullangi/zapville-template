@@ -20,6 +20,7 @@
     <!-- Libraries CSS Files -->
     <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="../lib/animate-css/animate.min.css" rel="stylesheet">
+    <link href="../lib/looper/looper.css" rel="stylesheet">
 
     <!-- Main Stylesheet File -->
     <link href="../css/style.css" rel="stylesheet">
@@ -79,12 +80,187 @@
                         </ul>
                     </li>
                     <li><a href="#">Discussion Forum</a></li>
+                    <li class="area">
+                        <a data-toggle="modal" data-target="#location" href="#"><i class="glyphicon glyphicon-map-marker"></i></a>
+                    </li>
+                    <li class="login">
+                        <a data-toggle="modal" data-target="#signInModel" href="#"><i class="glyphicon glyphicon-user"></i></a>
+                    </li>
                 </ul>
             </nav>
             <!-- #nav-menu-container -->
         </div>
     </header>
     <!-- #header -->
+
+    <!-- =========================
+     MODELS
+     ============================----->
+
+    <div class="modal fade" id="location" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Select the location</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="control-group">
+                        <label class="control-label" for="userid">Search City:</label>
+                        <div class="controls">
+                            <input required="" id="location" name="location" type="text" class="form-control" placeholder="start typing area" class="input-medium" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-zapp">Set Location</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade " id="signInModel" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <br>
+                <button type="button" class="signinClose close" data-dismiss="modal" aria-hidden="true">×</button>
+                <div class="bs-example bs-example-tabs">
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+                        <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+                    </ul>
+                </div>
+                <div class="modal-body">
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade active in" id="signin">
+                            <form class="form-horizontal">
+                                <fieldset>
+                                    <!-- Sign In Form -->
+                                    <!-- Text input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="userid">Username:</label>
+                                        <div class="controls">
+                                            <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="test@gmail.com" class="input-medium" required="">
+                                        </div>
+                                    </div>
+
+                                    <!-- Password input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="passwordinput">Password:</label>
+                                        <div class="controls">
+                                            <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label" for="rememberme"></label>
+                                        <div class="controls">
+                                            <label class="checkbox inline" for="rememberme-0">
+                  <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me">
+                  Remember me
+                </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Button -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="signin"></label>
+                                        <div class="controls">
+                                            <button id="signin" name="signin" class="btn btn-zapp">Sign In</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="signup">
+                            <div class="col-sm-6">
+                                <div class="social-box">
+                                    <div class="row mg-btm">
+                                        <div class="col-md-12">
+                                            <a href="#" class="btn btn-primary btn-block">
+                                                <span class="icon-facebook"></span>Sign up Using Facebook
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                      (OR)
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <a href="#" class="btn btn-info btn-block">
+                                                <span class="icon-twitter"></span>Sign up using Twitter
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <!-- Sign Up Form -->
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                            <label class="control-label" for="Email">Email:</label>
+                                            <div class="controls">
+                                                <input id="Email" name="Email" class="form-control" type="text" placeholder="JoeSixpack@sixpacksrus.com" class="input-large" required="">
+                                            </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                            <label class="control-label" for="userid">Username:</label>
+                                            <div class="controls">
+                                                <input id="userid" name="userid" class="form-control" type="text" placeholder="JoeSixpack" class="input-large" required="">
+                                            </div>
+                                        </div>
+
+                                        <!-- Password input-->
+                                        <div class="control-group">
+                                            <label class="control-label" for="password">Password:</label>
+                                            <div class="controls">
+                                                <input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
+                                                <em>1-8 Characters</em>
+                                            </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                            <label class="control-label" for="reenterpassword">Re-Enter Password:</label>
+                                            <div class="controls">
+                                                <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required="">
+                                            </div>
+                                        </div>
+
+                                        <!-- Multiple Radios (inline) -->
+                                        <br>
+                                        <div class="control-group">
+                                            <label class="control-label" for="humancheck">Humanity Check:</label>
+                                            <div class="controls">
+                                                <label class="radio inline" for="humancheck-0">
+                  <input type="radio" name="humancheck" id="humancheck-0" value="robot" checked="checked">I'm a Robot</label>
+                                                <label class="radio inline" for="humancheck-1">
+                  <input type="radio" name="humancheck" id="humancheck-1" value="human">I'm Human</label>
+                                            </div>
+                                        </div>
+
+                                        <!-- Button -->
+                                        <div class="control-group">
+                                            <label class="control-label" for="confirmsignup"></label>
+                                            <div class="controls">
+                                                <button id="confirmsignup" name="confirmsignup" class="btn btn-zapp">Sign Up</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--==========================
   Hero Section
@@ -101,16 +277,6 @@
                 <div class="searchBoxWrapper">
                     <div class="col-sm-1 col-md-2"></div>
                     <div class="input-group col-sm-10 col-md-8">
-                        <div class="input-group-btn">
-                            <button type="button" class="btn" id="cityDropDown" data-toggle="dropdown">
-                                    <span class="pull-left glyphicon glyphicon-home"></span>
-                                    <span class="pull-right glyphicon glyphicon-menu-down"></span>
-                                    <span class="">Select City</span>
-                                </button>
-                            <ul class="dropdown-menu" id="city-menu" aria-hidden="true">
-                                <li><a href="" class="">PUNE</a></li>
-                            </ul>
-                        </div>
                         <div class="">
                             <input type="text" class="form-control searchBar" placeholder="What service you need">
                             <div class="wrapper">
@@ -128,18 +294,28 @@
         </div>
     </section>
 
-    <section id="slates" class="section-cmn">
-        <div class="row wow fadeInUp">
-            <div class="col-sm-6">
-                <div class="slate-body">
-                    <h3 class="media-heading"><a href="#">ZappVille Exestive Contracts</a></h3>
-                    <p>Place holder for this section</p>
+    <section id="slates" class="uniqueFeatures section-cmn">
+        <div class="container wow fadeInUp">
+            <div class="row">
+                <h2 class="section-title">​Zappville's Unique Features</h2>
+                <div class="section-title-divider"></div>
+                <div class="col-sm-6">
+                    <div class="slate-body">
+                        <h3 class="media-heading"><a href="#">ZappVille Exestive Contracts</a></h3>
+                        <p>Place holder for this section
+                            <br>
+                            <a href="#">Learn More...</a>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="slate-body slate-right">
-                    <h3 class="media-heading"><a href="#">ZappVille Gaurntee</a></h3>
-                    <p>Place holder for this section</p>
+                <div class="col-sm-6">
+                    <div class="slate-body slate-right">
+                        <h3 class="media-heading"><a href="#">ZappVille Gaurntee</a></h3>
+                        <p>Place holder for this section
+                            <br>
+                            <a href="#">Learn More...</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -187,55 +363,70 @@
                     <p class="section-description">Erdo lide, nora porodo filece, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
                 </div>
             </div>
-
             <div class="row">
-                <div class="col-md-3">
-                    <div class="profile">
-                        <div class="pic"><img src="../img/pic-1.jpg" alt="start"></div>
-                        <h4>Plan</h4>
-                        <span>Start</span>
+                <div id="bulletLooper" data-looper="go" class="looper slide">
+                    <div class="looper-inner loop-item-wrapper">
+                        <div class="item loop-item">
+                            <div class="item-wrapper">
+                                <div class="col-md-6 imgBlock">
+                                    <img src="../img/pic-1.jpg" alt="">
+                                </div>
+                                <div class="col-md-6 msgBlock">
+                                    <div class="msg-wrapper">
+                                        <div class="block-title">This is the title for step 1</div>
+                                        <div class="block-msg">
+                                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item loop-item">
+                            <div class="item-wrapper">
+                                <div class="col-md-6 imgBlock">
+                                    <img src="../img/pic-2.jpg" alt="">
+                                </div>
+                                <div class="col-md-6 msgBlock">
+                                    <div class="msg-wrapper">
+                                        <div class="block-title">This is the title for step 2</div>
+                                        <div class="block-msg">
+                                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item loop-item">
+                            <div class="item-wrapper">
+                                <div class="col-md-6 imgBlock">
+                                    <img src="../img/pic-3.jpg" alt="">
+                                </div>
+                                <div class="col-md-6 msgBlock">
+                                    <div class="msg-wrapper">
+                                        <div class="block-title">This is the title for step 3</div>
+                                        <div class="block-msg">
+                                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="quote">
-                        <b><img src="../img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
-                        semper. <small><img src="../img/quote_sign_right.png" alt=""></small>
-                    </div>
+                    <nav>
+                        <a class="looper-control" data-looper="prev" href="#bulletLooper">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                        </a>
+                        <a class="looper-control right" data-looper="next" href="#bulletLooper">
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </a>
+                        <ul class="looper-nav">
+                            <li><a href="#bulletLooper" data-looper="to" data-args="1">&bull;</a></li>
+                            <li><a href="#bulletLooper" data-looper="to" data-args="2">&bull;</a></li>
+                            <li><a href="#bulletLooper" data-looper="to" data-args="3">&bull;</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-md-9">
-                    <div class="quote">
-                        <b><img src="../img/quote_sign_left.png" alt=""></b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae.
-                        <small><img src="../img/quote_sign_right.png" alt=""></small>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="profile">
-                        <div class="pic"><img src="../img/pic-2.jpg" alt=""></div>
-                        <h4>Construction</h4>
-                        <span>Continue</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="profile">
-                        <div class="pic"><img src="../img/pic-3.jpg" alt="end"></div>
-                        <h4>Delivery</h4>
-                        <span>END</span>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="quote">
-                        <b><img src="../img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
-                        semper. <small><img src="../img/quote_sign_right.png" alt=""></small>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
@@ -262,10 +453,41 @@
     <footer id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="footer links">
-                        This is a placeholder for footer links
+                <div class="col-lg-12">
+                    <div class="col-md-3">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
                     </div>
+                    <div class="col-md-3">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">Link 1 for page</a></li>
+                            <li><a href="#">Link 2</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">Link 3</a></li>
+                            <li><a href="#">short link for pg4</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">Link 5</a></li>
+                            <li><a href="#">missed link 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="nav nav-pills nav-justified">
+                        <li><a href="/">© 2017 ZappVille.</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -284,6 +506,7 @@
     <script src="../lib/wow/wow.min.js"></script>
     <script src="../lib/stickyjs/sticky.js"></script>
     <script src="../lib/easing/easing.js"></script>
+    <script src="../lib/looper/looper.min.js"></script>
 
     <!-- Template Specisifc Custom Javascript File -->
     <script src="../js/custom.js"></script>

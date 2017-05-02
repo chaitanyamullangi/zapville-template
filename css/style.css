@@ -27,6 +27,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+.btn-zapp {
+  background-color: #03C4EB;
+  color: #fff;
+  border-radius: 0px;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
 /* Prelaoder */
 #preloader {
   position: fixed;
@@ -83,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero-logo {
-  margin: 20px;
+  margin: 0 20px 20px;
 }
 
 #hero .hero-logo img {
@@ -479,17 +489,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* ---------------------------------- */
 #slates {
-  padding: 0;
   text-align: center;
 }
-#slates .row {
-  margin: 0;
+
+#slates .col-sm-6{
+    padding-left: 0px;
 }
+
 .slate-body {
     padding: 80px 0;
 }
 .slate-right {
-  background: #f5f5f5;
+  /*background: #f5f5f5;*/
+  border-left: 1px solid #ccc;
 }
 
 /* features
@@ -553,6 +565,28 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* HowItWorks Section
 --------------------------------*/
+#howItWorks .loop-item-wrapper{
+  height: 500px;
+}
+#howItWorks .item-wrapper .imgBlock img{
+  height: 490px;
+  width: 100%;
+}
+#howItWorks .item-wrapper .msgBlock{
+  text-align: center;
+  height: 490px;
+}
+#howItWorks .item-wrapper .block-title{
+  font-weight: bold;
+  font-size: 24px;
+  margin: 25px 0;
+}
+#howItWorks .item-wrapper .block-msg{
+  font-size: 18px;
+}
+#howItWorks .item-wrapper .msg-wrapper{
+  margin-top: 150px;
+}
 #howItWorks {
   background: #f6f6f6;
   padding: 80px 0;
@@ -672,4 +706,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ccc;
+}
+
+/*--------------------------------------------------------------
+#Models
+---------------------------------------------------------------*/
+.social-box {
+  text-align: center;
+  /*THIS IS A HACK FOR NOW. THIS DOES NOT WORK FOR MOBILE DEVICES*/
+  margin-top: 100px;
+}
+.signinClose {
+  margin-right: 10px;
 }
