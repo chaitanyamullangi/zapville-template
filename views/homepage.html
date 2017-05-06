@@ -35,15 +35,36 @@
   ============================-->
     <header id="header">
         <div class="container">
-
             <div id="logo" class="pull-left">
                 <a href="#hero"><img src="../img/logo.png" alt="" title="" /></img>
                 </a>
                 <!-- Uncomment below if you prefer to use a text image -->
                 <!--<h1><a href="#hero">Header 1</a></h1>-->
             </div>
-
+          
             <nav id="nav-menu-container">
+                <div class="overflow-auto">
+                    <ul class="nav nav-pills pull-right">
+                        <li>
+                            <div class="location">
+                                <form role="form" class="form-horizontal">
+                                    <i class="glyphicon glyphicon-map-marker areaIcon"></i>
+                                    <select class="location-select">
+                                      <option value="0" selected>Select Area</option>
+                                      <option value="1">Banglore</option>
+                                      <option value="2">Chennai</option>
+                                      <option value="3">Hyderabad</option>
+                                      <option value="4">Pune</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="signin" data-toggle="modal" data-target="#signInModel" href="#"><i class="glyphicon glyphicon-user"></i> Sign In / Sign Up</div>
+                        </li>
+
+                    </ul>
+                </div>
                 <ul class="nav-menu">
                     <li class="menu-active"><a href="#">Home</a></li>
                     <li class="menu-has-children"><a href="#">Services</a>
@@ -80,12 +101,14 @@
                         </ul>
                     </li>
                     <li><a href="#">Discussion Forum</a></li>
+                    <!--
                     <li class="area">
                         <a data-toggle="modal" data-target="#location" href="#"><i class="glyphicon glyphicon-map-marker"></i></a>
                     </li>
                     <li class="login">
                         <a data-toggle="modal" data-target="#signInModel" href="#"><i class="glyphicon glyphicon-user"></i></a>
                     </li>
+                    -->
                 </ul>
             </nav>
             <!-- #nav-menu-container -->
@@ -184,7 +207,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                      (OR)
+                                        (OR)
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
@@ -333,17 +356,20 @@
                     <div class="col-md-4 wow zoomIn animated">
                         <i class="fa fa-desktop"></i>
                         <h3>Trusted</h3>
-                        <p>This is the place holder for this section step.</p>
+                        <p>This is the place holder for this section step.<br>
+                            <a href="#">Learn More...</a></p>
                     </div>
                     <div class="col-md-4 wow zoomIn animated">
                         <i class="fa fa-cog"></i>
                         <h3>Simplified</h3>
-                        <p>This is the place holder for this section step.</p>
+                        <p>This is the place holder for this section step.<br>
+                            <a href="#">Learn More...</a></p>
                     </div>
                     <div class="col-md-4 wow zoomIn animated">
                         <i class="fa fa-mobile"></i>
                         <h3>Get the best</h3>
-                        <p>This is the place holder for this section step.</p>
+                        <p>This is the place holder for this section step.<br>
+                            <a href="#">Learn More...</a></p>
                     </div>
                 </div>
             </div>

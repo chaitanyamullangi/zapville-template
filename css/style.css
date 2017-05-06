@@ -37,6 +37,14 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0px;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
+*:focus {
+   outline: 0;
+ }
+
 /* Prelaoder */
 #preloader {
   position: fixed;
@@ -188,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   background: #111;
   padding: 20px 0;
-  height: 90px;
+  height: 100px;
 }
 
 #header #logo {
@@ -214,6 +222,26 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
   max-height: 50px;
+}
+
+#header .location-select {
+  width: 120px;
+  margin: 0 40px 0 0;
+  /*border-radius: 5px;*/
+}
+.location-select {
+  margin: 0 10px 0 0;
+  background: transparent;
+  padding: 2px;
+  border: 0;
+  border-bottom: 1px solid;
+}
+
+.signin{
+  cursor: pointer;
+}
+.signin:hover{
+  color: #03C4EB;
 }
 
 @media (max-width: 768px) {
