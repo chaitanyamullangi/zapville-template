@@ -38,7 +38,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .overflow-auto {
-  overflow: auto;
+  /*overflow: auto;*/
+  display: table;
+  float: right;
+  width: 100%;
 }
 
 *:focus {
@@ -224,9 +227,41 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 50px;
 }
 
+#header .serviceDD.sfHover {
+    /*position: static!important;*/
+}
+/**/
+
+#header .serviceDD.sfHover .subMenu {
+    display: table;
+    text-align: center;
+    left: auto;
+    /*top: 100px; /*Height of Nav bar, use this when position bolcks uncommented*/*/
+    /*position: absolute; /* If ''.serviceDD' position is uncomented. uncoment this aswell */ */
+}
+#header .serviceDD .subMenu>li {
+    display: table-cell;
+}
+#header .serviceDD .subMenu>li>a {
+  font-weight: bold;
+}
+
+#header .nav-menu .serviceDD .subMenu ul {
+  top: auto;
+  left: 0;
+}
+#header .nav-menu .serviceDD .subMenu .sf-with-ul:after {
+  content: "\f107";
+}
+#header .nav-menu .serviceDD .subMenu a {
+  padding: 5px 15px;
+}
+
 #header .location-select {
   width: 120px;
   margin: 0 40px 0 0;
+  background-color: transparent;
+  color: #666666
   /*border-radius: 5px;*/
 }
 .location-select {
@@ -235,6 +270,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2px;
   border: 0;
   border-bottom: 1px solid;
+}
+.location-select.byUl{
+  color: #666666;
+  text-align: left;
+}
+.location-dd{
+  width: 120px;
+}
+.location-dd ul{
+  border-radius: 0px;
 }
 
 .signin{
@@ -332,18 +377,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Nav Meu Styling */
-.nav-menu a {
+.nav-menu a, .location-dd .dropdown-menu>li>a {
   padding: 10px 15px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  width: 100%;
+  /*color: #fff;*/
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 14px;
   outline: none;
 }
 
-.nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
+.nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a, .location-dd .dropdown-menu>li>a:hover {
   color: #03C4EB;
 }
 
