@@ -250,6 +250,26 @@ h1, h2, h3, h4, h5, h6 {
   top: auto;
   left: 0;
 }
+#header .nav-menu .serviceDD .subMenu .column-2  ul:nth-of-type(1) {
+  top: auto;
+  left: -50%;
+}
+#header .nav-menu .serviceDD .subMenu .column-2  ul:nth-of-type(2) {
+  top: auto;
+  left: 50%;
+}
+#header .nav-menu .serviceDD .subMenu .column-3  ul:nth-of-type(1){
+  top: auto;
+  left: -100%;
+}
+#header .nav-menu .serviceDD .subMenu .column-3  ul:nth-of-type(2){
+  top: auto;
+  left: 0;
+}
+#header .nav-menu .serviceDD .subMenu .column-3  ul:nth-of-type(3){
+  top: auto;
+  left: 100%;
+}
 #header .nav-menu .serviceDD .subMenu .sf-with-ul:after {
   content: "\f107";
 }
