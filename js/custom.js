@@ -1,6 +1,7 @@
 jQuery(document).ready(function( $ ) {
 
   // Preloader
+  // Use this properly. This is just a hack to replicate the loader at the begining
   $(window).on('load', function() {
     $('#preloader').delay(100).fadeOut('slow',function(){$(this).remove();});
   });

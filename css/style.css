@@ -802,6 +802,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ccc;
 }
 
+#footer .container .nav a {
+  padding: 0px;
+}
+
+#footer .container .nav a:hover {
+  background: transparent;
+  color: white;
+}
+
 /*--------------------------------------------------------------
 #Models
 ---------------------------------------------------------------*/
@@ -812,4 +821,28 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .signinClose {
   margin-right: 10px;
+}
+
+
+/*--------------------------------------------------------------
+#Cost Estimator Block
+---------------------------------------------------------------*/
+.costEstimatorPage {
+  margin: 0 20px;
+}
+.card {
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+  border: 1px solid #bbb;
+  box-shadow: 3px 3px 10px 0px;
+}
+.resultsBlock {
+  height: 400px;
+}
+.deatilsBlock {
+  height: 500px;
+}
+.howItWorksBlock {
+  height: 200px;
 }
