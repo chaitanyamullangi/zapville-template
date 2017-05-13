@@ -1,0 +1,142 @@
+#services-hero {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/services-hero-bg.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+#services-hero .services-hero-container {
+    background: rgba(0, 0, 0, 0.5);
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#services-hero .container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+
+#services-hero .container .col-sm-6 {
+    padding: 0
+}
+
+#services-hero #contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 50px 0;
+    color: #777;
+}
+
+#services-hero #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#services-hero .form_title {
+    text-align: center;
+    color: #BF3D1A;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+#services-hero #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+}
+
+#services-hero fieldset {
+    border: medium none !important;
+    margin: 0 0 15px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#services-hero .rooms-checkbox {
+    text-align: left;
+}
+
+#services-hero #contact input, #services-hero #contact textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 5px;
+}
+
+#services-hero #contact input:hover, #services-hero #contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #BF3D1A;
+}
+
+#services-hero #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#services-hero #contact .contact-submit {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #BF3D1A;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#services-hero #contact .contact-submit:hover {
+    background: #c53c16;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#services-hero #contact .contact-submit:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#services-hero #contact input:focus,
+#services-hero #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #BF3D1A;
+}
+
+#services-hero .message_block {
+    color: white;
+    margin-top: 20px;
+}
+
+.services-sub-nav .service-tabs{
+  border-bottom: 1px solid #BF3D1A;
+  overflow: auto;
+}
+
+.services-sub-nav .tab a{
+    min-height: 70px;
+    line-height: 38px;
+}
+
+.tab-content {
+  min-height: 300px;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  /*border: 1px solid grey;*/
+}
+
+.tab-content:nth-of-type(odd){
+   background: #f6f6f6;
+}

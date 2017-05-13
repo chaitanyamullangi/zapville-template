@@ -2,9 +2,9 @@ jQuery(document).ready(function( $ ) {
 
   // Preloader
   // Use this properly. This is just a hack to replicate the loader at the begining
-  $(window).on('load', function() {
+  // $(window).on('load', function() {
     $('#preloader').delay(100).fadeOut('slow',function(){$(this).remove();});
-  });
+  // });
 
   // Hero rotating texts
   $("#hero .rotating").Morphext({
@@ -24,7 +24,10 @@ jQuery(document).ready(function( $ ) {
 
   // Mobile Navigation
   if( $('#nav-menu-container').length ) {
-      var $mobile_nav = $('#nav-menu-container').clone().prop({ id: 'mobile-nav'});
+      var $mobile_nav = $('<nav id="mobile-nav"></nav>');
+      $mobile_nav.append($('.location-signin-wrap').clone());
+      $mobile_nav.append($('#nav-menu-left > ul').clone());
+      $mobile_nav.append($('#nav-menu-container > .nav-menu').clone());
       $mobile_nav.find('> ul').attr({ 'class' : '', 'id' : '' });
       $('body').append( $mobile_nav );
       $('body').prepend( '<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>' );
