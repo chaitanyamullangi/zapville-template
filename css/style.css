@@ -354,8 +354,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #header {
     background: #fff;
-    padding: 20px 0;
-    height: 100px;
+    padding: 20px 0 10px 0;
+    height: 90px;
 }
 
 #header #logo {
@@ -460,11 +460,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .location-select {
-    width: 120px;
-    margin: 0 40px 0 0;
+    width: 100px;
+    margin: 0 20px 0 0;
     background-color: transparent;
-    color: #666666
+    color: #BF3D1A;
+    border: 0px;
     /*border-radius: 5px;*/
+}
+
+#header .location-signin-wrap {
+  color: #BF3D1A;
+  font-size: 12px;
+  margin-top: -2px;
 }
 
 .location-select {
@@ -490,6 +497,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .signin {
     cursor: pointer;
+    color: #BF3D1A;
 }
 
 .signin:hover {
@@ -509,7 +517,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .is-sticky #header {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 1);
 }
 
 
@@ -544,7 +552,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu>li>a {
-    font-weight: bold;
+    /*font-weight: bold;*/
+    color: grey;
 }
 
 .nav-menu li:hover>ul, .nav-menu li.sfHover>ul {
@@ -590,7 +599,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #nav-menu-left {
     float: left;
-    margin: 30px 0 0 0;
+    margin: 25px 0 0 0;
 }
 
 @media (max-width: 921px) {
@@ -622,7 +631,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul {
-    margin: 4px 0 0 15px;
+    margin: 14px 0 0 15px;
     /*box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);*/
 }
 
