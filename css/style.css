@@ -10,7 +10,7 @@ a {
 }
 
 a:hover, a:active, a:focus {
-    color: #c53c16;
+    color: #cc6245;
     outline: none;
     text-decoration: none;
 }
@@ -27,10 +27,20 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+::selection {
+    background: #BF3D1A;
+    color: #fff;
+}
+
 .btn-zapp {
     background-color: #BF3D1A;
     color: #fff;
     border-radius: 0px;
+}
+
+.btn-zapp:hover {
+  background-color: #cc6245;
+  color: #fff;
 }
 
 .btn {
@@ -43,7 +53,16 @@ h1, h2, h3, h4, h5, h6 {
     float: right;
     width: 100%;
 }
-
+.form-control {
+  border-radius: 0px;
+}
+.form-control:focus{
+  box-shadow:none;
+  border-color:#BF3D1A;
+}
+.form-control.textarea{
+  resize:none;
+}
 *:focus {
     outline: 0;
 }
@@ -501,7 +520,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .signin:hover {
-    color: #BF3D1A;
+    color: #cc6245;
 }
 
 @media (max-width: 768px) {
@@ -544,7 +563,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu li {
     position: relative;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 .nav-menu>li {
@@ -566,7 +585,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul li {
-    min-width: 180px;
+    width: 180px;
 }
 
 
@@ -717,7 +736,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav ul li a:hover {
-    color: #c53c16;
+    color: #cc6245;
 }
 
 #mobile-nav ul li li {
@@ -862,38 +881,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #BF3D1A;
     background: #fff;
 }
-
-
-/* Get Started Section
---------------------------------*/
-
-#about {
-    background: #fff;
-    padding: 80px 0;
-}
-
-#about .about-container {
-    background: url(../img/about-img.jpg) left top no-repeat;
-}
-
-#about .about-content {
-    background: #fff;
-}
-
-#about .about-title {
-    color: #333;
-    font-weight: 700;
-    font-size: 28px;
-}
-
-#about .about-text {
-    line-height: 26px;
-}
-
-#about .about-text:last-child {
-    margin-bottom: 0;
-}
-
 
 /* HowItWorks Section
 --------------------------------*/
@@ -1093,7 +1080,15 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: center;
     margin: 20px;
     border: 1px solid #bbb;
+    background: #fff;
     box-shadow: 3px 3px 10px 0px;
+}
+
+.card-flat {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #bbb;
+  background: #fff;
 }
 
 .resultsBlock {

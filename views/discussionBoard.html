@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ZappVille</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="construction, house, contact, contract" name="keywords">
+    <meta content="marketplace for all construction services" name="description">
+
+    <!-- Place your favicon.ico and apple-touch-icon.png in the root directory and update the path -->
+    <link href="../favicon.ico" rel="shortcut icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../lib/animate-css/animate.min.css" rel="stylesheet">
+    <link href="../lib/looper/looper.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/discussionBoard.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--==========================
+  Header Section
+============================-->
+    <header id="header">
+        <div class="container">
+            <div id="logo" class="pull-left">
+                <a href="homepage.html"><img src="../img/logo.png" alt="" title="" /></img>
+                </a>
+                <!-- Uncomment below if you prefer to use a text image -->
+                <!--<h1><a href="#hero">Header 1</a></h1>-->
+            </div>
+
+            <nav id="nav-menu-container">
+                <div class="overflow-auto">
+                    <ul class="nav nav-pills pull-right">
+                        <li>
+                            <div class="location">
+                                <form role="form" class="form-horizontal">
+                                    <i class="glyphicon glyphicon-map-marker areaIcon"></i>
+                                    <!-- NOTE: Using this just for now, drawback of using this select is the dropdown styles
+                                  can not be overwrite. because this componet styles are default and genrated by OS.
+                                  so use next commented block when using Angular code-->
+                                    <!-- <select class="zappvill-droppdown location-select">
+                                    <option value="0" selected>Select Area</option>
+                                    <option value="1">Banglore</option>
+                                    <option value="2">Chennai</option>
+                                    <option value="3">Hyderabad</option>
+                                    <option value="4">Pune</option>
+                                  </select> -->
+                                    <!-- Use this block is easy when using angular for logic-->
+                                    <span class="dropdown location-dd">
+                                      <button href="#" class="location-select byUl" data-toggle="dropdown">Select City <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Banglore</a></li>
+                                        <li><a href="#">Chennai</a></li>
+                                        <li><a href="#">Hyderabad</a></li>
+                                        <li><a href="#">Pune</a></li>
+                                    </ul>
+                                    </span>
+                                </form>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="signin" data-toggle="modal" data-target="#signInModel" href="#"><i class="glyphicon glyphicon-user"></i> Sign In / Sign Up</div>
+                        </li>
+
+                    </ul>
+                </div>
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="#">Home</a></li>
+                    <li class="serviceDD menu-has-children">
+                        <a href="#">Services</a>
+                        <ul class="subMenu">
+                            <li class="menu-has-children column-2"><a href="#">New Construction</a>
+                                <ul>
+                                    <li><a href="services.html">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                    <li><a href="#">Deep Drop Down 6</a></li>
+                                    <li><a href="#">Deep Drop Down 7</a></li>
+                                    <li><a href="#">Deep Drop Down 8</a></li>
+                                    <li><a href="#">Deep Drop Down 9</a></li>
+                                    <li><a href="#">Deep Drop Down 10</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 11</a></li>
+                                    <li><a href="#">Deep Drop Down 12</a></li>
+                                    <li><a href="#">Deep Drop Down 13</a></li>
+                                    <li><a href="#">Deep Drop Down 14</a></li>
+                                    <li><a href="#">Deep Drop Down 15</a></li>
+                                    <li><a href="#">Deep Drop Down 16</a></li>
+                                    <li><a href="#">Deep Drop Down 17</a></li>
+                                    <li><a href="#">Deep Drop Down 18</a></li>
+                                    <li><a href="#">Deep Drop Down 19</a></li>
+                                    <li><a href="#">Deep Drop Down 20</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-has-children column-3"><a href="#">Renovation</a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                    <li><a href="#">Deep Drop Down 6</a></li>
+                                    <li><a href="#">Deep Drop Down 7</a></li>
+                                    <li><a href="#">Deep Drop Down 8</a></li>
+                                    <li><a href="#">Deep Drop Down 9</a></li>
+                                    <li><a href="#">Deep Drop Down 10</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 11</a></li>
+                                    <li><a href="#">Deep Drop Down 12</a></li>
+                                    <li><a href="#">Deep Drop Down 13</a></li>
+                                    <li><a href="#">Deep Drop Down 14</a></li>
+                                    <li><a href="#">Deep Drop Down 15</a></li>
+                                    <li><a href="#">Deep Drop Down 16</a></li>
+                                    <li><a href="#">Deep Drop Down 17</a></li>
+                                    <li><a href="#">Deep Drop Down 18</a></li>
+                                    <li><a href="#">Deep Drop Down 19</a></li>
+                                    <li><a href="#">Deep Drop Down 20</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 21</a></li>
+                                    <li><a href="#">Deep Drop Down 22</a></li>
+                                    <li><a href="#">Deep Drop Down 23</a></li>
+                                    <li><a href="#">Deep Drop Down 24</a></li>
+                                    <li><a href="#">Deep Drop Down 25</a></li>
+                                    <li><a href="#">Deep Drop Down 26</a></li>
+                                    <li><a href="#">Deep Drop Down 27</a></li>
+                                    <li><a href="#">Deep Drop Down 28</a></li>
+                                    <li><a href="#">Deep Drop Down 29</a></li>
+                                    <li><a href="#">Deep Drop Down 30</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-has-children"><a href="#">Other Services</a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-has-children"><a href="costEstimator.html">Cost Estimator</a>
+                        <ul>
+                            <li><a href="costEstimator.html">Drop Down 1</a></li>
+                            <li><a href="costEstimator.html">Drop Down 2</a>
+                            </li>
+                            <li><a href="costEstimator.html">Drop Down 3</a></li>
+                            <li><a href="costEstimator.html">Drop Down 4</a></li>
+                            <li><a href="costEstimator.html">Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-has-children"><a href="#">Knowledge Base</a>
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li><a href="#">Drop Down 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Discussion Forum</a></li>
+                    <!--
+                  <li class="area">
+                      <a data-toggle="modal" data-target="#location" href="#"><i class="glyphicon glyphicon-map-marker"></i></a>
+                  </li>
+                  <li class="login">
+                      <a data-toggle="modal" data-target="#signInModel" href="#"><i class="glyphicon glyphicon-user"></i></a>
+                  </li>
+                  -->
+                </ul>
+            </nav>
+            <!-- #nav-menu-container -->
+        </div>
+    </header>
+    <!-- #header -->
+    <!-- ++++++++++++++++++++++++++++++ START OF Discussion-Board VIEW ++++++++++++++++++++++++++++++++++++++++-->
+    <div class="discussionBoard-view">
+        <div class="container">
+
+            <div class="card-flat left-side-block">
+                <div class="sidebar">
+                    <div class="sidebar-header">
+                        Discussions Topics</span>
+                    </div>
+                    <div class="sidebar-body">
+                        <ul>
+                            <li class="sidebar-item">
+                                <a class="sidebar-item-label" href="#">
+                                    <span class="option-text">All Discussions</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-item-label" href="#">
+                                    <span class="option-text">Topic 1</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-item-label" href="#">
+                                    <span class="option-text">Topic with added stuff</span>
+                                </a>
+                            </li>
+                            <li class=" sidebar-item">
+                                <a class="sidebar-item-label" href="#">
+                                    <span class="option-text">Topic never had</span>
+                                </a>
+                            </li>
+                            <li class=" sidebar-item">
+                                <a class="sidebar-item-label" href="#">
+                                    <span class="option-text">The funny</span>
+                                </a>
+                            </li>
+                            <li class=" sidebar-item">
+                                <a class="sidebar-item-label" href="#">
+                                    <span class="option-text">One more topic</span>
+                                </a>
+                            </li>
+                            <li class=" sidebar-item">
+                                <a class="sidebar-item-label" href="#">
+                                    <span class="option-text">Others</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side-block">
+                <div class="card-flat block-top">
+                    <h3 class="askQuestionTitle">What are you working on?</h3>
+                    <div class="askQuestionSubTitle">Get help for your projects, share your finds and show off your Before and After.</div>
+                    <form role="form" class="post-discussion">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div>
+                                    <img class="userImage" src="https://st.hzcdn.com/res/2556/en-IN/pic/user_0.png?v=2556">
+                                    <div class="form-group title-filed">
+                                        <input type="text" class="form-control" name="title" autocomplete="off" placeholder="Example Title: 'Our new kitchen'">
+                                        <div class="pull-right small">Characters Left <span class="countdown">70</span></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control inputfileName" placeholder="Select the image to upload">
+                                    <input type="file" class="inputfile" id="uploadImage" accept="image/*">
+                                    <label class="inputfileLabel" for="uploadImage"><span>Upload Image</span></label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control textarea" rows="4" name="details" placeholder="Tell us the details here, share photos if you have them."></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <div>Tags:</div>
+                                    <div class="">
+                                        <div class="checkbox checkbox-inline col-sm-3">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label for="inlineCheckbox1"> Kitchen </label>
+                                        </div>
+                                        <div class="checkbox checkbox-inline col-sm-3">
+                                            <input type="checkbox" id="inlineCheckbox2" value="option1" checked="">
+                                            <label for="inlineCheckbox2"> Full House </label>
+                                        </div>
+                                        <div class="checkbox checkbox-inline col-sm-3">
+                                            <input type="checkbox" id="inlineCheckbox3" value="option1">
+                                            <label for="inlineCheckbox3"> Bed Room </label>
+                                        </div>
+                                        <div class="checkbox checkbox-inline col-sm-3">
+                                            <input type="checkbox" id="inlineCheckbox4" value="option1">
+                                            <label for="inlineCheckbox4"> Bath Room 2</label>
+                                        </div>
+                                        <div class="checkbox checkbox-inline col-sm-3">
+                                            <input type="checkbox" id="inlineCheckbox5" value="option1">
+                                            <label for="inlineCheckbox5"> Kitchen 2</label>
+                                        </div>
+                                        <div class="checkbox checkbox-inline col-sm-3">
+                                            <input type="checkbox" id="inlineCheckbox6" value="option1" checked="">
+                                            <label for="inlineCheckbox6"> Full House 2</label>
+                                        </div>
+                                        <div class="checkbox checkbox-inline col-sm-3">
+                                            <input type="checkbox" id="inlineCheckbox7" value="option1">
+                                            <label for="inlineCheckbox7"> Bed Room 2</label>
+                                        </div>
+                                        <div class="checkbox checkbox-inline col-sm-3">
+                                            <input type="checkbox" id="inlineCheckbox8" value="option1">
+                                            <label for="inlineCheckbox8"> Bath Room 2</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-zapp pull-right">Post Discussion</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-flat block-bottom">
+                    <div class="post-block-head clearfix">
+                        <div class="results-count pull-left">
+                            4 Posts Available
+                        </div>
+                        <div class="pull-right">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                  <span style="padding-right: 10px;">Sort Posts By </span><span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Lastest</a></li>
+                                    <li><a href="#">Featured</a></li>
+                                    <li><a href="#">Popular</a></li>
+                                    <li><a href="#">Unanswered</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- THE POST BLOCK LOOP START -->
+                    <div class="post-block-wrapper">
+                        <!-- START OF POST 1 -->
+                        <div class="post-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4><strong><a href="#" class="discussion-title">Even a small space can be turned beautiful in less budget</a></strong></h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!-- <div class="col-sm-2">
+                                            <a href="#" class="thumbnail">
+                                                <img src="http://placehold.it/260x180" alt="">
+                                            </a>
+                                        </div> -->
+                                        <!-- When Uncommenting image change the class name from 'col-sm-10' to 'col-sm-10' -->
+                                        <div class="col-sm-12">
+                                            <div>
+                                                Lorem ipsum dolor sit amet, id nec conceptam conclusionemque. Et eam tation option. Utinam salutatus ex eum. Ne mea dicit tibique facilisi, ea mei omittam explicari conclusionemque, ad nobis propriae quaerendum sea.
+                                            </div>
+                                            <div><a class="btn" href="#">Read more</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <p></p>
+                                        <div class="post-info">
+                                            <i class="icon-user"></i> by <span>John</span> | <i class="icon-calendar"></i> Sept 16th, 2012 | <i class="icon-comment"></i> <span>3 Comments</span> | <i class="icon-share"></i> <span>39 Shares</span> |
+                                            <i class="icon-tags"></i> Tags :
+                                            <a href="#"><span class="label label-info tag">Tips</span></a>
+                                            <a href="#"><span class="label label-info tag">House</span></a>
+                                            <a href="#"><span class="label label-info tag">Hall</span></a>
+                                            <a href="#"><span class="label label-info tag">Kitchen</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF POST 1 -->
+                        <div class="post-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4><strong><a href="#" class="discussion-title">Post title in small</a></strong></h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!-- <div class="col-sm-2">
+                                            <a href="#" class="thumbnail">
+                                                <img src="http://placehold.it/260x180" alt="">
+                                            </a>
+                                        </div> -->
+                                        <!-- When Uncommenting image change the class name from 'col-sm-10' to 'col-sm-10' -->
+                                        <div class="col-sm-12">
+                                            <div>
+                                                Lorem ipsum dolor sit amet, id nec conceptam conclusionemque. Et eam tation option. Utinam salutatus ex eum. Ne mea dicit tibique facilisi, ea mei omittam explicari conclusionemque, ad nobis propriae quaerendum sea.
+                                            </div>
+                                            <div><a class="btn" href="#">Read more</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <p></p>
+                                        <div class="post-info">
+                                            <i class="icon-user"></i> by <span>John</span> | <i class="icon-calendar"></i> Sept 16th, 2012 | <i class="icon-comment"></i> <span>3 Comments</span> | <i class="icon-share"></i> <span>39 Shares</span> |
+                                            <i class="icon-tags"></i> Tags :
+                                            <a href="#"><span class="label label-info tag">Tips</span></a>
+                                            <a href="#"><span class="label label-info tag">House</span></a>
+                                            <a href="#"><span class="label label-info tag">Hall</span></a>
+                                            <a href="#"><span class="label label-info tag">Kitchen</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4><strong><a href="#" class="discussion-title">Title</a></strong></h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!-- <div class="col-sm-2">
+                                            <a href="#" class="thumbnail">
+                                                <img src="http://placehold.it/260x180" alt="">
+                                            </a>
+                                        </div> -->
+                                        <!-- When Uncommenting image change the class name from 'col-sm-10' to 'col-sm-10' -->
+                                        <div class="col-sm-12">
+                                            <div>
+                                                Lorem ipsum dolor sit amet, id nec conceptam conclusionemque. Et eam tation option. Utinam salutatus ex eum. Ne mea dicit tibique facilisi, ea mei omittam explicari conclusionemque, ad nobis propriae quaerendum sea.
+                                            </div>
+                                            <div><a class="btn" href="#">Read more</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <p></p>
+                                        <div class="post-info">
+                                            <i class="icon-user"></i> by <span>John</span> | <i class="icon-calendar"></i> Sept 16th, 2012 | <i class="icon-comment"></i> <span>3 Comments</span> | <i class="icon-share"></i> <span>39 Shares</span> |
+                                            <i class="icon-tags"></i> Tags :
+                                            <a href="#"><span class="label label-info tag">Tips</span></a>
+                                            <a href="#"><span class="label label-info tag">House</span></a>
+                                            <a href="#"><span class="label label-info tag">Hall</span></a>
+                                            <a href="#"><span class="label label-info tag">Kitchen</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4><strong><a href="#" class="discussion-title">Title for some other post</a></strong></h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!-- <div class="col-sm-2">
+                                            <a href="#" class="thumbnail">
+                                                <img src="http://placehold.it/260x180" alt="">
+                                            </a>
+                                        </div> -->
+                                        <!-- When Uncommenting image change the class name from 'col-sm-10' to 'col-sm-10' -->
+                                        <div class="col-sm-12">
+                                            <div>
+                                                Lorem ipsum dolor sit amet, id nec conceptam conclusionemque. Et eam tation option. Utinam salutatus ex eum. Ne mea dicit tibique facilisi, ea mei omittam explicari conclusionemque, ad nobis propriae quaerendum sea.
+                                            </div>
+                                            <div><a class="btn" href="#">Read more</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <p></p>
+                                        <div class="post-info">
+                                            <i class="icon-user"></i> by <span>John</span> | <i class="icon-calendar"></i> Sept 16th, 2012 | <i class="icon-comment"></i> <span>3 Comments</span> | <i class="icon-share"></i> <span>39 Shares</span> |
+                                            <i class="icon-tags"></i> Tags :
+                                            <a href="#"><span class="label label-info tag">Tips</span></a>
+                                            <a href="#"><span class="label label-info tag">House</span></a>
+                                            <a href="#"><span class="label label-info tag">Hall</span></a>
+                                            <a href="#"><span class="label label-info tag">Kitchen</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <ul class="pagination pull-right">
+                                <li class="disabled"><a href="#">«</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">»</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ++++++++++++++++++++++++++++++ END OF Discussion-Board VIEW ++++++++++++++++++++++++++++++++++++++++-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Used JavaScript Libraries in this app -->
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/jquery/jquery-migrate.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../lib/superfish/hoverIntent.js"></script>
+    <script src="../lib/superfish/superfish.min.js"></script>
+    <script src="../lib/morphext/morphext.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/stickyjs/sticky.js"></script>
+    <script src="../lib/easing/easing.js"></script>
+    <script src="../lib/looper/looper.min.js"></script>
+
+    <!-- Template Specisifc Custom Javascript File -->
+    <script src="../js/custom.js"></script>
+
+
+</body>
+
+</html>
